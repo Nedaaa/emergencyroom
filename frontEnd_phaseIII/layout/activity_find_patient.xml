@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindPatientActivity" >
+
+    <TextView
+        android:id="@+id/findPatientTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="@string/find_patient" />
+
+    <EditText
+        android:id="@+id/health_card_num_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/findPatientTextView"
+        android:layout_below="@+id/findPatientTextView"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/hint_health_num"
+        android:maxLines="1"
+        android:textSize="12sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/submitButton"
+        android:layout_alignBottom="@+id/submitButton"
+        android:layout_alignRight="@+id/findPatientTextView"
+        android:onClick="backToChoices"
+        android:text="@string/back" 
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/findPatientTextView"
+        android:layout_below="@+id/health_card_num_field"
+        android:layout_marginTop="34dp"
+        android:onClick="findPatient"
+        android:text="@string/submit" 
+        android:textSize="15sp" />
+
+</RelativeLayout>

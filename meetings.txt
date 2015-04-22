@@ -1,0 +1,20 @@
+Planning Meeting (First Meeting):
+Tasks for Monday:
+	(Sany/Zhi & Neda) implement front-end
+		-Fix previous problems from PII
+	(Derek) Finish the back-end(Physician, PhysicianManager)
+		-Edit Nurse to have getUrgencyList
+		-Edit Patient to have setPrescription
+		-Fix previous problems from PII
+		-Fix and update CRC Cards
+
+Status Meeting:
+	(Sany/Zhi & Neda):
+		-Completed Physician controls, Searching Patient, Adding Prescriptions
+		-Need to fix Physician/Nurse login
+	(Derek):
+		-Completed all changes/added variables to complement the
+		use of program for Physicians
+		-Added variables in Patient to get the latest vital signs
+		-Added getUrgencyList
+		-Need to complete CRC Cards

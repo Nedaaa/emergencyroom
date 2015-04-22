@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity" >
+
+    <TextView
+        android:id="@+id/recordPatientTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/record_patient"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/recordPatientTextView"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/name"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameTextView"
+        android:layout_alignBottom="@+id/nameTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/nameTextView"
+        android:ems="10"
+        android:hint="@string/hint_name"
+        android:textSize="12sp" 
+        android:maxLines="1"/>
+    
+    <TextView
+        android:id="@+id/healthCardNumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameTextView"
+        android:layout_below="@+id/name_field"
+        android:layout_marginTop="16dp"
+        android:text="@string/health_card_num"
+        android:textSize="14sp" />
+    
+    <EditText
+        android:id="@+id/health_card_num_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/healthCardNumTextView"
+        android:layout_alignBottom="@+id/healthCardNumTextView"
+        android:layout_toRightOf="@+id/healthCardNumTextView"
+        android:ems="10"
+        android:hint="@string/hint_health_num"
+        android:textSize="12sp" 
+        android:maxLines="1"/>
+    
+    <TextView
+        android:id="@+id/dobTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameTextView"
+        android:layout_below="@+id/health_card_num_field"
+        android:layout_marginTop="16dp"
+        android:text="@string/dob"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/dob_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dobTextView"
+        android:layout_alignBottom="@+id/dobTextView"
+        android:layout_toRightOf="@+id/dobTextView"
+        android:ems="10"
+        android:hint="@string/hint_dob"
+        android:textSize="12sp" 
+        android:inputType="number"
+        android:maxLength="8"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/bodyTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameTextView"
+        android:layout_below="@+id/dob_field"
+        android:layout_marginTop="16dp"
+        android:text="@string/body_temp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/body_temp_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bodyTempTextView"
+        android:layout_alignBottom="@+id/bodyTempTextView"
+        android:layout_toRightOf="@+id/bodyTempTextView"
+        android:ems="10"
+        android:hint="@string/hint_body_temp"
+        android:textSize="12sp" 
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/systolicBPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bodyTempTextView"
+        android:layout_below="@+id/body_temp_field"
+        android:layout_marginTop="18dp"
+        android:text="@string/systolic_bp" />
+    
+    <EditText
+        android:id="@+id/systolic_bp_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/systolicBPTextView"
+        android:layout_alignBottom="@+id/systolicBPTextView"
+        android:layout_toRightOf="@+id/systolicBPTextView"
+        android:ems="10"
+        android:hint="@string/hint_systolic"
+        android:textSize="12sp" 
+        android:inputType="number"
+        android:maxLines="1"/>
+    
+    <TextView
+        android:id="@+id/diastolicBPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bodyTempTextView"
+        android:layout_below="@+id/systolic_bp_field"
+        android:layout_marginTop="18dp"
+        android:text="@string/diastolic_bp" />
+    
+    <EditText
+        android:id="@+id/diastolic_bp_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/diastolicBPTextView"
+        android:layout_alignBottom="@+id/diastolicBPTextView"
+        android:layout_toRightOf="@+id/diastolicBPTextView"
+        android:ems="10"
+        android:hint="@string/hint_diastolic"
+        android:textSize="12sp" 
+        android:inputType="number"
+        android:maxLines="1"/>
+    
+    <TextView
+        android:id="@+id/heartRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bodyTempTextView"
+        android:layout_below="@+id/diastolic_bp_field"
+        android:layout_marginTop="18dp"
+        android:text="@string/heart_rate" />
+    
+    <EditText
+        android:id="@+id/heart_rate_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/heartRateTextView"
+        android:layout_alignBottom="@+id/heartRateTextView"
+        android:layout_toRightOf="@+id/heartRateTextView"
+        android:ems="10"
+        android:hint="@string/hint_heart_rate"
+        android:textSize="12sp" 
+        android:inputType="number"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/heartRateTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/record" 
+        android:onClick="recordPatient"
+        android:textSize="15sp" /> 
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/recordButton"
+        android:layout_alignBottom="@+id/recordButton"
+        android:layout_alignLeft="@+id/health_card_num_field"
+        android:onClick="backToChoices"
+        android:text="@string/back" 
+        android:textSize="15sp" />
+    
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayPatientActivity" >
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/healthCardNumTextView"
+        android:layout_below="@+id/healthCardNumTextView"
+        android:layout_marginTop="14dp"
+        android:text="@string/name"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/dobTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameTextView"
+        android:layout_below="@+id/nameTextView"
+        android:layout_marginTop="14dp"
+        android:text="@string/dob"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/systolicBPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bodyTempTextView"
+        android:layout_below="@+id/bodyTempTextView"
+        android:layout_marginTop="15dp"
+        android:text="@string/systolic_bp" 
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/heartRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/diastolicBPTextView"
+        android:layout_below="@+id/diastolicBPTextView"
+        android:layout_marginTop="20dp"
+        android:text="@string/heart_rate" 
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/diastolicBPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/systolicBPTextView"
+        android:layout_below="@+id/systolicBPTextView"
+        android:layout_marginTop="13dp"
+        android:text="@string/diastolic_bp" />
+
+    <TextView
+        android:id="@+id/healthCardNumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bodyTempTextView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/health_card_num"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/medicationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/heartRateTextView"
+        android:layout_below="@+id/heartRateTextView"
+        android:layout_marginTop="20dp"
+        android:text="@string/medication" 
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/medicationTextView"
+        android:layout_below="@+id/medicationTextView"
+        android:layout_marginTop="28dp"
+        android:text="@string/instruction" 
+        android:textSize="13sp"/>
+
+    <EditText
+        android:id="@+id/medication_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/medicationTextView"
+        android:layout_alignBottom="@+id/medicationTextView"
+        android:layout_toRightOf="@+id/dobTextView"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/instructionTextView"
+        android:layout_alignBottom="@+id/instructionTextView"
+        android:layout_toRightOf="@+id/medicationTextView"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/bodyTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dobTextView"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/body_temp"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/addPrescriptionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/backButton"
+        android:layout_alignBottom="@+id/backButton"
+        android:layout_alignRight="@+id/healthCardNumTextView"
+        android:onClick="addPrescription"
+        android:text="@string/prescription"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_marginBottom="16dp"
+        android:onClick="backToSearch"
+        android:text="@string/back_to_search"
+        android:textSize="13sp" />
+
+</RelativeLayout>

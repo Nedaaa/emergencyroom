@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiceActivity" >
+    
+    <TextView 
+        android:id="@+id/ChooseOptionsTextView" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentLeft="true" 
+        android:layout_alignParentTop="true" 
+        android:layout_marginLeft="22dp" 
+        android:layout_marginTop="20dp" 
+        android:text="@string/choose_options" 
+        android:textSize="22sp"/>
+    
+    <Button
+        android:id="@+id/recordPatientButton" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentLeft="true" 
+        android:layout_below="@+id/ChooseOptionsTextView"
+        android:layout_marginLeft="22dp" 
+        android:layout_marginTop="40dp" 
+        android:text="@string/record_patient" 
+        android:textSize="15sp" 
+        android:onClick="chooseRecord"/>
+
+	<Button
+	    android:id="@+id/unseenPatientsListButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/logoutButton"
+	    android:layout_below="@+id/updatePatientButton"
+	    android:layout_marginTop="22dp"
+	    android:onClick="chooseUnseenPatients"
+	    android:text="@string/unseen_patients"
+	    android:textSize="15sp" />
+
+	<Button
+	    android:id="@+id/updatePatientButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/recordPatientButton"
+	    android:layout_below="@+id/recordPatientButton"
+	    android:layout_marginTop="34dp"
+	    android:onClick="chooseUpdate"
+	    android:text="@string/update_patient"
+	    android:textSize="15sp" />
+
+	<Button
+	    android:id="@+id/logoutButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/updatePatientButton"
+	    android:layout_below="@+id/unseenPatientsListButton"
+	    android:layout_marginTop="49dp"
+	    android:onClick="chooseLogout"
+	    android:text="@string/logout" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/nurseLoginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/nurse_login"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/user_name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userNameTextView"
+        android:layout_alignBottom="@+id/userNameTextView"
+        android:layout_toRightOf="@+id/userNameTextView"
+        android:ems="10"
+        android:hint="@string/hint_user_name"
+        android:lines="1"
+        android:maxLength="20"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userNameTextView"
+        android:layout_below="@+id/user_name_field"
+        android:layout_marginTop="48dp"
+        android:text="@string/password"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/passwordTextView"
+        android:layout_alignBottom="@+id/passwordTextView"
+        android:layout_alignLeft="@+id/user_name_field"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:textSize="15sp" 
+        android:maxLength="20"
+        android:lines="1"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/password_field"
+        android:layout_below="@+id/password_field"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/login" 
+        android:onClick="checkLogin"/>
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nurseLoginTextView"
+        android:layout_below="@+id/nurseLoginTextView"
+        android:layout_marginTop="116dp"
+        android:text="@string/user_name"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/jobChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_name_field"
+        android:layout_alignLeft="@+id/userNameTextView"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/nurseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:onClick="chooseJob"
+            android:text="@string/nurse" />
+
+        <RadioButton
+            android:id="@+id/physicianButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="chooseJob"
+            android:text="@string/physician" />
+    </RadioGroup>
+
+</RelativeLayout>

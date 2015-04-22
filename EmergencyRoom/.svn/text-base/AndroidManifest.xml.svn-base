@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emergencyroom"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.emergencyroom.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.emergencyroom.ChoiceActivity"
+            android:label="@string/title_activity_choice" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyroom.DisplayRecordActivity"
+            android:label="@string/title_activity_display_record" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyroom.DisplaySaveActivity"
+            android:label="@string/title_activity_display_save" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyroom.DisplayUpdateActivity"
+            android:label="@string/title_activity_display_update" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyroom.RecordActivity"
+            android:label="@string/title_activity_record" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyroom.UpdateActivity"
+            android:label="@string/title_activity_update" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyroom.FindPatientActivity"
+            android:label="@string/title_activity_find_patient" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyroom.UnseenPatientsActivity"
+            android:label="@string/title_activity_unseen_patients" >
+        </activity>
+    </application>
+
+</manifest>

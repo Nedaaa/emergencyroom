@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplaySaveActivity" >
+
+    <!-- work in Main Activity for newly_saved-->
+    <TextView 
+        android:id="@+id/newly_saved" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="22dp" 
+        android:layout_marginTop="40dp"/>
+    
+    <Button 
+        android:id="@+id/continueButton" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true" 
+        android:layout_alignParentRight="true" 
+        android:layout_marginBottom="30dp" 
+        android:layout_marginRight="30dp" 
+        android:text="@string/continued" 
+        android:onClick="backToChoices"/><!-- need a method in Main Activity(or a interface?) -->
+
+</RelativeLayout>
